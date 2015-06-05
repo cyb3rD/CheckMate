@@ -12,17 +12,22 @@ body {
 }
 .boardRow {
 	display: table-row;
-	/*width: 60px;*/
 }
 .boardCell {
-	/*height: 60px;*/
+	height: 60px;
+	width: 60px;
 	display: table-cell;
 	border: 1px solid black;
 }
 /*Раскраска доски*/
-.boardRow:nth-child(even) .boardCell:nth-child(even){
-	background-color: black;
+.boardRow:nth-child(odd) .boardCell:nth-child(even){
+	background-color: grey;
 }
-.boardRow:nth-child(odd) .boardCell:nth-child(odd){
-	background-color: black;
+.boardRow:nth-child(even) .boardCell:nth-child(odd){
+	background-color: grey;
+}
+img {
+
+	width: 60px;
+	height: 60px;
 }
