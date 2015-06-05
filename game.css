@@ -1,0 +1,28 @@
+body {
+	
+}
+
+.mainBoard {
+	display: table;
+	margin: auto;
+	min-width: 480px;
+	min-height: 480px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.boardRow {
+	display: table-row;
+	/*width: 60px;*/
+}
+.boardCell {
+	/*height: 60px;*/
+	display: table-cell;
+	border: 1px solid black;
+}
+/*Раскраска доски*/
+.boardRow:nth-child(even) .boardCell:nth-child(even){
+	background-color: black;
+}
+.boardRow:nth-child(odd) .boardCell:nth-child(odd){
+	background-color: black;
+}
